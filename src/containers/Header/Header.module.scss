@@ -1,0 +1,39 @@
+.Header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  .responseLogo{
+    img{
+      width: 138px;
+    }
+  }
+
+}
+@media (min-width: 1120px) {
+  .Header{
+    .responseLogo{
+      img{
+      display: none;
+    }
+  }
+  }
+}
+@media (max-width: 1120px) {
+  .Header{
+    justify-content: space-between;
+    .responseLogo{
+      margin-left: 20px;
+    }
+  }
+}
+@media (max-width: 415px) {
+  .Header{
+    padding: 15px 20px;
+    .responseLogo{
+      img{
+        width: 98px;
+      }
+    }
+  }
+}
