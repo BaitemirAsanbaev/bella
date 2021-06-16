@@ -1,0 +1,70 @@
+.modal{
+    max-width: 400px;
+    max-height: 470px;
+    margin: 100px auto;
+    background: #FFFFFF;
+    
+
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img img{
+    margin-top: 50px;
+}
+.form{
+    display: flex;
+    flex-direction:column;
+    max-width: 344px;
+    margin:10px auto;
+    
+}
+.input {
+    height: 44px;
+    border: 1px solid #E4E4E4;
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 16px;
+   
+    
+}
+.button{
+    height: 44px;
+    margin-top: 8px;
+    background: #2B2A2A;
+    color: white;
+    margin-bottom: 35px;
+}
+.p{
+    text-align: center;
+    
+    
+}
+.registr{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 9px;
+}
+.label{
+    margin-top: 7px;
+    font-size: 13px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    max-width: 350px;
+    margin:10px auto;
+
+}
+.box a{
+    color: black;
+}
+.box input{
+    width: 18px;
+    height: 18px;
+    border: 1px solid #2B2A2A;
+    box-sizing: border-box;
+}
