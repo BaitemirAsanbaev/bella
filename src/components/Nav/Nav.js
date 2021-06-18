@@ -5,7 +5,7 @@ import like_icon from "../../assests/images/like-icon.svg"
 import profile_icon from "../../assests/images/profile-icon.svg"
 import basket_icon from "../../assests/images/basket-icon.svg"
 import { NavLink } from "react-router-dom";
-const Nav = () => {
+const Nav = ({search}) => {
   return ( <nav className={classes.Nav}>
     <div className={classes.drawerItems}>
       <ul>
@@ -22,7 +22,7 @@ const Nav = () => {
     </div>
     <div>
       <ul>
-        <li><NavLink className={classes.search} to="/search" activeStyle={{color: '#AB844A'}}><img alt="icon" src={search_icon}/><span>Поиск</span></NavLink></li>
+        <li><NavLink className={classes.search} to="/" onClick={search}><img alt="icon" src={search_icon}/><span>Поиск</span></NavLink></li>
         <li><NavLink className={classes.saved} to="/saved" activeStyle={{color: '#AB844A'}}><img alt="icon" src={like_icon}/><span>Избранное</span></NavLink></li>
         <li><NavLink className={classes.profile} to="/profile" activeStyle={{color: '#AB844A'}}><img alt="icon" src={profile_icon}/><span>Профиль</span></NavLink></li>
         <li><NavLink className={classes.basket} to="/busket" activeStyle={{color: '#AB844A'}}><img alt="icon" src={basket_icon}/><span>Корзина</span></NavLink></li>
