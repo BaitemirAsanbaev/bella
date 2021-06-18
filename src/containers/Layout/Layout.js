@@ -2,6 +2,8 @@ import { useState } from "react";
 import Drawer from "./Drawer/Drawer";
 import Header from "../Header/Header"
 import Search from "./Search/Search";
+import Footer from "../Footer/Footer";
+
 
 const Layout = ({children}) => {
 
@@ -19,6 +21,7 @@ const Layout = ({children}) => {
     <main>
       {children}
     </main>
+    <Footer/>
   </div> );
 }
  
