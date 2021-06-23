@@ -10,21 +10,21 @@ const Footer = () => {
     <div className={classes.links}>
       <ul>
         <h6>Покупателям</h6>
-        <li><Link>Как сделать заказ</Link></li>
-        <li><Link>Способы оплаты</Link></li>
-        <li><Link>Доставка</Link></li>
+        <li><Link to="/">Как сделать заказ</Link></li>
+        <li><Link to="/">Способы оплаты</Link></li>
+        <li><Link to="/">Доставка</Link></li>
       </ul>
       <ul>
         <h6>Покупателям</h6>
-        <li><Link>Возврат товара</Link></li>
-        <li><Link>Вопросы и ответы</Link></li>
-        <li><Link>Публичная оферта</Link></li>
+        <li><Link to="/">Возврат товара</Link></li>
+        <li><Link to="/">Вопросы и ответы</Link></li>
+        <li><Link to="/">Публичная оферта</Link></li>
       </ul>
       <ul>
         <h6>Компания</h6>
-        <li><Link>О нас</Link></li>
-        <li><Link>Реквизиты</Link></li>
-        <li><Link>Контакты</Link></li>
+        <li><Link to="/">О нас</Link></li>
+        <li><Link to="/">Реквизиты</Link></li>
+        <li><Link to="/">Контакты</Link></li>
       </ul>
       <ul>
         <h6>Контакты</h6>
@@ -36,10 +36,10 @@ const Footer = () => {
     <div className={classes.otherInfo}>
       <small>Developed by Sunrise Studio 2021</small>
       <div>
-        <a><img alt="icon" src={ok}/></a>
-        <a><img alt="icon" src={vk}/></a>
-        <a><img alt="icon" src={inst}/></a>
-        <a><img alt="icon" src={fb}/></a>
+        <a href="google.com"><img alt="icon" src={ok}/></a>
+        <a href="google.com"><img alt="icon" src={vk}/></a>
+        <a href="google.com"><img alt="icon" src={inst}/></a>
+        <a href="google.com"><img alt="icon" src={fb}/></a>
       </div>
     </div>
   </div> );

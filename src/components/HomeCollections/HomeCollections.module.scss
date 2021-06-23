@@ -1,0 +1,38 @@
+.HomeCollections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff3e3;
+
+  .card {
+    width: 250px;
+    margin: 30px;
+    .cardPreview {
+      background-color: khaki;
+      height: 376px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 18px;
+      font-size: 15px;
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .HomeCollections {
+    .card {
+      width: 200px;
+      .cardPreview {
+        height: 300.8px;
+      }
+      .view {
+        height: 35.2px;
+      }
+    }
+  }
+}

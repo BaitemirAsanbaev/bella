@@ -1,0 +1,53 @@
+.Subscription{
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 36px 0px;
+  .sub_container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    max-width: 1096px;
+    margin: 0 auto;
+    padding-right: 130px;
+    padding-bottom: 30px;
+    .info{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-left: 125px;
+      margin-top: 137px;
+      h2{
+        margin: 0px;
+      }
+      p{
+        max-width: 376px;
+        margin: 20px 0px;
+        color: #7c7c7c;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        input, select{
+          height: 44px;
+          outline: none;
+          margin: 6px 0px;
+        }
+        button{
+          background-color: #2B2A2A;
+          border: none;
+          outline: none;
+          color: #fff;
+          font-size: 14px;
+          padding: 15px 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .bell{
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+
+}
