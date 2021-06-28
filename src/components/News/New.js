@@ -1,25 +1,13 @@
 import News from "./News"
 import classes from "./News.module.css"
-import { useState } from "react";
+
 
 
 const New = () => {
-     const [counter, setCounter] = useState(0)
-     const [isred,setRed] = useState(false)
 
-     
-
-     function increment(){
-         setCounter(counter+1)
-         setRed(true)
-         
-     }
 
     return ( 
     <div className={classes.container}>
-        <h2 className={isred ? "red" : ""}>Новости</h2>
-        <h2>{counter}</h2>
-        <button onClick={increment}> counter</button>
     <div className={classes.new}>
    <News/>
    <News/>
