@@ -45,6 +45,9 @@ export default class CustomSlider extends Component {
           </div>
           <div>
           <img src={img} alt="phot"/>
+
+
+          
           </div>
           
         </Slider>
