@@ -11,6 +11,7 @@ import Profile from './pages/Profile/Profile';
 import About from './pages/About/About'
 import NotFound from './pages/NotFound/NotFound';
 import ProductPage from './pages/ProductPage/ProductPage';
+import Info from './pages/Info/Info';
 
 function App({match}) {
   return (
@@ -19,6 +20,7 @@ function App({match}) {
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/cotegories" component={Cotegories}/>
+          <Route path="/info/:id" component={Info}/>
           <Route path="/saved" component={Saved}/>
           <Route path="/collections" component={Collections}/>
           <Route path="/news" component={News}/>

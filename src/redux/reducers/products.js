@@ -35,13 +35,6 @@ const INITIAL_STATE = [
     size: 36
   },
   {
-    id:5,
-    title: "The skirt",
-    cotegory: "dress",
-    price: 1004,
-    size: 36
-  },
-  {
     id:6,
     title: "The skirt",
     cotegory: "dress",
