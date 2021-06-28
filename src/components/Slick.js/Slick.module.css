@@ -1,0 +1,11 @@
+
+.slick img{
+    width: 100%;
+    max-height: 100vh;
+}
+.ul > dots{
+    background-color: red;
+}
+.carousel-dots{
+    background: black;
+}
