@@ -5,6 +5,7 @@ import Location from "../../containers/Location/Location";
 const Info = ({match}) => {
 
   const output = [];
+  let loc = ""
 
   switch (match.params.id) {
     case "delivery":
@@ -13,13 +14,20 @@ const Info = ({match}) => {
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non enim praesent elementum facilisis leo, vel fringilla est ullamcorper eget nulla facilisi etiam dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus, viverra vitae congue eu, consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus</p>
       </>)
+      loc = "Доставка"
       break;
 
     case "contacts":
       output.push(<>
         <h1>Контакты</h1>
-
       </>)
+      loc = "Контакты"
+      break;
+    case "contacts":
+      output.push(<>
+        <h1>Вопросы и ответы</h1>
+      </>)
+      loc = "Вопросы и ответы"
       break;
   
     default:
@@ -27,12 +35,12 @@ const Info = ({match}) => {
   }
 
   return ( <div className={classes.Info}>
-    <Location currentLocation="Доставка"/>
+    <Location currentLocation={loc}/>
     <div className={classes.infoContainer}>
       <div className={classes.links}>
         <NavLink to="/info/delivery" activeClassName={classes.active}>Доставака</NavLink>
         <NavLink to="/info/contacts" activeClassName={classes.active}>Контакты</NavLink>
-        <NavLink to="faq" activeClassName={classes.active}>Вопросы и ответы</NavLink>
+        <NavLink to="/info/faq" activeClassName={classes.active}>Вопросы и ответы</NavLink>
       </div>
       <div className={classes.content}>{output}</div>
     </div>

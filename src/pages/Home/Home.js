@@ -2,10 +2,11 @@ import classes from './Home.module.scss';
 import HomeCollections from '../../components/HomeCollections/HomeCollections';
 import Hit from '../../components/Hit/Hit';
 import Subscription from '../../components/Subscription/Subscription';
+import Slider from "../../components/Slider/Slider"
 
 const Home = () => {
   return ( <div className={classes.Home}>
-    <div style={{width: "100%", height: "664px", backgroundColor: "#aff4ab"}}></div>
+    <Slider/>
     <HomeCollections/>
     <Hit title="Хит продаж"/>
     <Hit title="Новинки"/>
