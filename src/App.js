@@ -10,7 +10,7 @@ import OrdersHistory from './pages/OrdersHistory/OrdersHistory';
 import Profile from './pages/Profile/Profile';
 import About from './pages/About/About'
 import NotFound from './pages/NotFound/NotFound';
-import ProductPage from './pages/ProductPage/ProductPage';
+import ProductPage from './components/Card/ProductPage/ProductPage';
 import Info from './pages/Info/Info';
 
 function App({match}) {
