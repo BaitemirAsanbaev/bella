@@ -14,7 +14,7 @@ const Layout = ({children}) => {
   const search_block = [];
 
   if(profile){
-    search_block.push(<DropDown/>)
+    search_block.push(<DropDown profile={(()=>setProfile(false))}/>)
   }
   if(search){
     search_block.push(<Search close={()=>setSearch(false)}/>)

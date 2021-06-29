@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import classes from "./DropDown.module.scss"
 
-const DropDown = () => {
+const DropDown = ({profile}) => {
   return ( <div className={classes.DropDown}>
-    <span>Мои заказы</span>
-    <span>Профиль</span>
+    <Link onClick={profile} to="/orders">Мои заказы</Link>
+    <Link onClick={profile} to="profile">Профиль</Link>
     <div></div>
-    <span>Выйти</span>
+    <Link onClick={profile} to="/">Выйти</Link>
   </div> );
 }
  

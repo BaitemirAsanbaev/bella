@@ -47,10 +47,7 @@ export default class CustomSlider extends Component {
           
         </Slider>
         
-        <SeeAll style={{
-          position: "absolute",
-          top: "40%",
-          backgroundColor: "brown"}}/>
+        <SeeAll home={true}/>
       </div>
     );
   }
