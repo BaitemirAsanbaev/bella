@@ -23,7 +23,7 @@ const Info = ({match}) => {
       </>)
       loc = "Контакты"
       break;
-    case "contacts":
+    case "faq":
       output.push(<>
         <h1>Вопросы и ответы</h1>
       </>)
