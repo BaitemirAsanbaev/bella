@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import NewsCard from "./NewsCard/NewsCard";
 import Pagination from "./Pagination/Pagination";
+import Location from "../../containers/Location/Location"
 import axios from "axios"
 
 const News = () => {
@@ -36,6 +37,8 @@ const News = () => {
   }
 
   return ( <div>
+    <Location currentLocation="Новости"/>
+    <h1>Новости</h1>
     <NewsCard posts={currentPosts} loading={loading}/>
     <Pagination         
         postsPerPage={postsPerPage}

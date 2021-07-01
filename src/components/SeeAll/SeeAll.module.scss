@@ -18,3 +18,16 @@
   top: -100px;
   z-index: 10;
 }
+.news{
+  background-color: #fff;
+  a{
+    color: #2B2A2A;
+  }
+  transition: background-color .5s, color .5s;
+}
+.news:hover{
+  background-color: #2B2A2A;
+  a{
+  color: #fff;
+  }
+}

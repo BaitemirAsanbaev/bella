@@ -8,10 +8,13 @@ const SeeAll = (props) => {
   if(props.home){
     className.push(classes.home)
   }
+  if(props.news){
+    className.push(classes.news)
+  }
 
   return ( <div className={className.join(" ")}>
     <Link to={`/${props.url}`}>
-    Смотреть все {'>'}
+    {props.news ? "Подробнее": "Смотреть все"} {'>'}
     </Link>
   </div> );
 }

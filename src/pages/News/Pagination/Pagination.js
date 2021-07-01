@@ -24,14 +24,28 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage, next, pre
   const prevBtn = [];
   if(currentPag !== 1){
     prevPag.push(<div key="prev" className={classes.pagItem} onClick={()=>{ paginate(currentPags[0] - pagsPerPart); setCurrentPag(currentPag - 1)}}>...</div>)
-    prevBtn.push(<div key="pb" className={classes.pagItem}>
-      <img alt="prev" src={prev_icon} onClick={()=>{prev(); currentPage<=currentPags[0] ? setCurrentPag(currentPag - 1): console.log("");}} />
+    prevBtn.push(<div
+      key="pb"
+      className={classes.pagItem}
+      onClick={()=>{
+        prev();
+        currentPage<=currentPags[0]
+          ? setCurrentPag(currentPag - 1)
+          : console.log("");}} >
+      <img alt="prev" src={prev_icon}/>
     </div>)
   }
   if(currentPag <= currentPags.length){
     nextPag.push(<div key="next" className={classes.pagItem} onClick={()=>{ paginate(currentPags[0] + pagsPerPart); setCurrentPag(currentPag + 1)}}>...</div>)
-    nextBtn.push(<div key="nb" className={classes.pagItem}>
-      <img alt="next" src={next_icon} onClick={()=>{next(); currentPage>=currentPags[currentPags.length - 1] ? setCurrentPag(currentPag + 1): console.log("");}} />
+    nextBtn.push(<div 
+      key="nb"
+      className={classes.pagItem}
+      onClick={()=>{
+        next();
+        currentPage>=currentPags[currentPags.length - 1]
+          ? setCurrentPag(currentPag + 1)
+          : console.log("");}}>
+      <img alt="next" src={next_icon}/>
     </div>)
   }
 
