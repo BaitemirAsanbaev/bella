@@ -3,6 +3,7 @@ import HomeCollections from '../../components/HomeCollections/HomeCollections';
 import Hit from '../../components/Hit/Hit';
 import Subscription from '../../components/Subscription/Subscription';
 import Slider from "../../components/Slider/Slider"
+import Adventeges from '../../components/Adventeges/Adventeges';
 
 const Home = () => {
   return ( <div className={classes.Home}>
@@ -12,6 +13,7 @@ const Home = () => {
     <Hit title="Новинки"/>
     <HomeCollections/>
     <Subscription/>
+    <Adventeges/>
   </div> );
 }
  
