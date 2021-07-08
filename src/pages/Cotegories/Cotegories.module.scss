@@ -1,0 +1,35 @@
+.Cotegories{
+  padding: 0px 135px;
+  margin-top: 20px;
+  .container{
+    display: flex;
+    select{
+      margin-top: 100px;
+      outline: none;
+      border: none;
+      text-align: right;
+      option{
+        color: rgba(0, 0, 0, .5);
+      }
+    }
+    .main{
+      .title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+          font-size: 24px;
+          margin: 0px;
+          font-weight: 400;
+        }
+      }
+      .cards{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+
+  }
+
+}

@@ -1,0 +1,24 @@
+.NewsCard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .card{
+    display: flex;
+    justify-content: center;
+    max-width: 532px;
+    .info{
+      display: flex;
+      flex-direction: column;
+      h2{
+        font-size: 16px;
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+    img{
+      width: 250px;
+      height: 250px;
+    }
+  }
+}

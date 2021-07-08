@@ -23,7 +23,7 @@ $h_font: 'helveticaneuecyr-light';
       margin: 0px 18px;
     }
   }
-  a{
+  a, span{
     color:#7C7C7C;
     text-decoration: none;
     font-size: 13px;
@@ -32,6 +32,7 @@ $h_font: 'helveticaneuecyr-light';
     box-sizing: border-box;
     display: flex;
     align-items: center;
+    cursor: pointer;
     img{
       width: 16px;
       margin-right: 10px;
